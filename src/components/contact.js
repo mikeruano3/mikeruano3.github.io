@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Cell, ListItem, List, ListItemContent} from 'react-mdl'
 import ProfilePic from '../components/Images/ProfilePic'
+import { lang } from '../strings/languaje'
 
 class Contact extends Component {
     render(){
@@ -11,7 +12,7 @@ class Contact extends Component {
                         <h2>Miguel Ruano</h2>
                         <ProfilePic />
                         <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                        { lang.aboutme }
                         </p>
                     </Cell>
                     <Cell col={6}>
@@ -47,7 +48,7 @@ class Contact extends Component {
                                     <ListItemContent>
                                         <h5>
                                             <i className="fa fa-linkedin" aria-hidden="true"/>
-                                            miguelruano35@gmail.com
+                                            https://www.linkedin.com/in/miguelruanoroca/
                                         </h5>
                                     </ListItemContent>
                                 </ListItem>

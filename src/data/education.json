@@ -1,8 +1,20 @@
 [
     {
-        "startDate": "25 oct 2019",
-        "endDate": "25 feb 2020",
-        "schoolName": "Universidad de San Carlos de Guatemala",
-        "schoolDescription": "Universidad de San Carlos de Guatemala"
+        "startDate": "January 2015",
+        "endDate": "December 2019",
+        "institution": "Universidad de San Carlos de Guatemala",
+        "degree": "Computer Science (Ciencias y Sistemas)",
+        "achievements": "Closed Pensum, Private Exam Approved",
+        "description": "",
+        "image": "usaclogo.png"
+    },
+    {
+        "startDate": "January 2011",
+        "endDate": "January 2014",
+        "institution": "Instituto Normal para Varones “Antonio Larrazábal”",
+        "degree": "Maestro de Educación Primaria",
+        "achievements": "Cum Laude",
+        "description": "",
+        "image": "inval.png"
     }
 ]

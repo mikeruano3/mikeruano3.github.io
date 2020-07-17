@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-import ReactLogo from '../../img/react-logo.png'
 
 class ProjectCard extends Component {
     constructor(props){
@@ -11,15 +10,14 @@ class ProjectCard extends Component {
         return (
            <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                 <CardTitle style={{color: '#fff', height: '176px', 
-                background: `url(${ReactLogo}) center / cover` }}>
-                    Welcome
+                background: `url(${require(`../../img/${this.props.item.img}`)}) center / cover` }}>
+                    {this.props.item.name}
                 </CardTitle>
                 <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris sagittis pellentesque lacus eleifend lacinia...
+                    {this.props.item.description}
                 </CardText>
                 <CardActions border>
-                    <Button colored>GitHub</Button>
+                    <Button href={this.props.item.githubLink} colored>GitHub</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                     <IconButton name="share" />

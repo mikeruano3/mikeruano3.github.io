@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Tabs, Tab, Grid, Cell } from 'react-mdl'
 import ProjectCard from './project-card'
+import ProjectData from '../../data/projects.json'
 
 class Projects extends Component {
     constructor(props){
@@ -9,15 +10,23 @@ class Projects extends Component {
     }
 
     toggleCategories() {
+        let listData;
         if(this.state.activeTab === 0){
-            return(
-                <div className="projects-grid">
-                    <ProjectCard id={this.state.activeTab}/>
-                    <ProjectCard id={this.state.activeTab}/>
-                    <ProjectCard id={this.state.activeTab}/>
-                </div>
-            )
+            listData = ProjectData.React
+        }else if(this.state.activeTab === 1){
+            listData = ProjectData.Angular
+        }else if(this.state.activeTab === 2){
+            listData = ProjectData.NodeJS
+        }else if(this.state.activeTab === 3){
+            listData = ProjectData.Docker
         }
+        return(
+            <div className="projects-grid">
+                {listData && listData.map((item, i) => {     
+                    return (<ProjectCard key={i} item={item} />) 
+                })}
+            </div>
+        )
     }
 
     render(){
@@ -29,7 +38,7 @@ class Projects extends Component {
                     <Tab>React</Tab>
                     <Tab>Angular</Tab>
                     <Tab>NodeJS</Tab>
-                    <Tab>MongoDB</Tab>
+                    <Tab>Docker</Tab>
                 </Tabs>
 
                 <Grid>
