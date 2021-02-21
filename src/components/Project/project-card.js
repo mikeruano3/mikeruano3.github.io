@@ -1,30 +1,36 @@
-import React, { Component } from 'react';
-import { Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import React, { Suspense } from 'react';
+import { Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl'
+import reactlogo from '../../assets/img/react-logo.png'
+import angularlogo from '../../assets/img/angular-logo.png'
+import nodelogo from '../../assets/img/node-logo.png'
+import dockerlogo from '../../assets/img/docker-logo.png'
 
-class ProjectCard extends Component {
-    constructor(props){
-        super(props)
-        this.state = { activeTab: 0 };
-    }
-    render() {
-        return (
-           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                <CardTitle style={{color: '#fff', height: '176px', 
-                background: `url(${require(`../../img/${this.props.item.img}`)}) center / cover` }}>
-                    {this.props.item.name}
+const ProjectCard = props => {
+
+    const imgs = {  reactlogo: reactlogo, angularlogo: angularlogo, nodelogo: nodelogo, dockerlogo: dockerlogo}
+
+    return (
+        <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+            {/**
+                <CardTitle style={{
+                    color: '#fff', height: '176px',
+                }}>
+                    {props.item.name}
                 </CardTitle>
-                <CardText>
-                    {this.props.item.description}
-                </CardText>
-                <CardActions border>
-                    <Button href={this.props.item.githubLink} colored>GitHub</Button>
-                </CardActions>
-                <CardMenu style={{color: '#fff'}}>
-                    <IconButton name="share" />
-                </CardMenu>
-           </Card>
-        )
-    }
+            **/}
+
+            <img src={imgs[props.item.img]} alt={props.item.name}/>
+            <CardText>
+                {props.item.description}
+            </CardText>
+            <CardActions border>
+                <Button href={props.item.githubLink} colored>GitHub</Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+                <IconButton name="share" />
+            </CardMenu>
+        </Card>
+    )
 }
 
 export default ProjectCard

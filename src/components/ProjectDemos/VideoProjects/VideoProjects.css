@@ -1,0 +1,15 @@
+.content-style{
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 0.5em;
+}
+
+.player-wrapper {
+    height: 65vh;
+    width: 75vw;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+}
+
+

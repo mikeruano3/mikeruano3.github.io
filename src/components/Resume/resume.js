@@ -4,9 +4,9 @@ import ProfilePic from '../Images/ProfilePic'
 import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
-import EducationData from '../../data/education.json'
-import ExperienceData from '../../data/experience.json'
-import SkillsData from '../../data/skills.json'
+import EducationData from '../../messages/english/education.json'
+import ExperienceData from '../../messages/english/experience.json'
+import SkillsData from '../../messages/english/skills.json'
 import { lang } from '../../strings/languaje'
 
 class Resume extends Component {

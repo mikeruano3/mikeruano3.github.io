@@ -4,7 +4,18 @@ import MainRouter from '../mainrouter'
 import { Link } from 'react-router-dom'
 import RainbowLink from './rainbowLink.js'
 
-function LayoutComponent() {
+const LayoutComponent = propa => {
+
+    const navigation = (
+        <Navigation>
+            <Link to="/">Home</Link>
+            <Link to="/resume">Resume</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/demos">Demos</Link>
+        </Navigation>
+    )
+
     return (
         <div className="demo-big-content">
             {/* Uses a header that scrolls with the text, rather than staying locked at the top */}
@@ -13,24 +24,14 @@ function LayoutComponent() {
                     title={
                         <RainbowLink to="/" text="MyPortfolio"/>} 
                     scroll>
-                    <Navigation>
-                        <Link to="/">Home</Link>
-                        <Link to="/resume">Resume</Link>
-                        <Link to="/projects">Projects</Link>
-                        <Link to="/contact">Contact</Link>
-                    </Navigation>
+                    {navigation}
                 </Header>
                 <Drawer  title={
                     <Link style={{textDecoration: 'none'}} to="/">
                         MyPortfolio
                     </Link>
                 }>
-                    <Navigation>
-                        <Link to="/">Home</Link>
-                        <Link to="/resume">Resume</Link>
-                        <Link to="/projects">Projects</Link>
-                        <Link to="/contact">Contact</Link>
-                    </Navigation>
+                    {navigation}
                 </Drawer>
                 <Content>
                     <div className="page-content" />
