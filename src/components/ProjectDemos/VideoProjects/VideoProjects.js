@@ -1,6 +1,6 @@
-import React, { useRef, useEffect, useState, Suspense, useCallback, useMemo } from 'react'
+import React from 'react'
 import ReactPlayer from 'react-player'
-import { Grid, Cell } from 'react-mdl'
+//import { Grid, Cell } from 'react-mdl'
 import './VideoProjects.css'
 
 const VideoProject = props => {

@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 import './ProjectDemo.css'
 import Shoe from './ShoeProject/3DShoe'
 import VideoProject from './VideoProjects/VideoProjects'

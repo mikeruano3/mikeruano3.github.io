@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, Suspense, useCallback, useMemo } from 'react'
+import React, { useRef, useEffect, useState, Suspense } from 'react'
 import { Canvas, useFrame } from 'react-three-fiber'
 import { useGLTF, OrbitControls, Environment, ContactShadows } from "@react-three/drei"
 import { proxy, useProxy } from 'valtio'

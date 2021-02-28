@@ -1,5 +1,5 @@
-import React, { Suspense } from 'react';
-import { Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl'
+import React from 'react';
+import { Card, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl'
 import reactlogo from '../../assets/img/react-logo.png'
 import angularlogo from '../../assets/img/angular-logo.png'
 import nodelogo from '../../assets/img/node-logo.png'
