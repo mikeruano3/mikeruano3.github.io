@@ -1,0 +1,24 @@
+@keyframes movingPerson {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes walkanim {
+    to { background-position: 100% 10%; }
+}
+
+.walkFordwars {
+    animation: walkanim 0.5s steps(7)
+}
+
+.walkBackwards {
+    animation: walkanim 0.5s steps(7);
+    -moz-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}

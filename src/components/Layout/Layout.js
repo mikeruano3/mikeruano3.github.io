@@ -4,7 +4,7 @@ import MainRouter from '../mainrouter'
 import { Link } from 'react-router-dom'
 import RainbowLink from './rainbowLink.js'
 
-const LayoutComponent = propa => {
+const LayoutComponent = props => {
 
     const navigation = (
         <Navigation>

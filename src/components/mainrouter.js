@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-import { Switch, Route, withRouter } from 'react-router-dom'
+import { HashRouter, Switch, Route, withRouter } from 'react-router-dom'
 import LandingPage from './LandingPage/LandingPage'
 import Contact from './contact'
 import Projects from './Project/projects'
@@ -12,21 +12,23 @@ const Main = withRouter(({ location }) => {
 
     return <TransitionGroup>
         <CSSTransition
+            mountOnEnter
             key={location.key}
             classNames="slide"
             timeout={1000}>
-
-            <Switch location={location}>
-                <Route exact path="/" component={LandingPage} />
-                <Route exact path="/contact" component={Contact} />
-                <Route exact path="/projects" component={Projects} />
-                <Route exact path="/resume" component={Resume} />
-                <Route path="/demos" render={() => (
-                    <Suspense fallback={<div>Loading...</div>}>
-                        <ProjectDemos/>
-                    </Suspense>
-                    )} /> 
-            </Switch>
+            <HashRouter basename='/'>
+                <Switch location={location}>
+                    <Route exact path="/" component={LandingPage} />
+                    <Route exact path="/contact" component={Contact} />
+                    <Route exact path="/projects" component={Projects} />
+                    <Route exact path="/resume" component={Resume} />
+                    <Route path="/demos" render={() => (
+                        <Suspense fallback={<div>Loading...</div>}>
+                            <ProjectDemos/>
+                        </Suspense>
+                        )} /> 
+                </Switch>
+            </HashRouter>
         </CSSTransition>
     </TransitionGroup>
 })
