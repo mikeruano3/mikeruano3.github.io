@@ -1,19 +1,21 @@
 import React from 'react'
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl'
 import MainRouter from '../mainrouter'
-import { Link } from 'react-router-dom'
+import { Link, HashRouter } from 'react-router-dom'
 import RainbowLink from './rainbowLink.js'
 
 const LayoutComponent = props => {
 
     const navigation = (
-        <Navigation>
-            <Link to="/">Home</Link>
-            <Link to="/resume">Resume</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/contact">Contact</Link>
-            <Link to="/demos">Demos</Link>
-        </Navigation>
+        <HashRouter basename='/'>
+            <Navigation>
+                <Link to="/">Home</Link>
+                <Link to="/resume">Resume</Link>
+                <Link to="/projects">Projects</Link>
+                <Link to="/contact">Contact</Link>
+                <Link to="/demos">Demos</Link>
+            </Navigation>
+        </HashRouter>
     )
 
     return (

@@ -16,8 +16,8 @@ const Main = withRouter(({ location }) => {
             key={location.key}
             classNames="slide"
             timeout={1000}>
-            <HashRouter basename='/'>
-                <Switch location={location}>
+            <Switch location={location}>
+                <HashRouter basename='/'>
                     <Route exact path="/" component={LandingPage} />
                     <Route exact path="/contact" component={Contact} />
                     <Route exact path="/projects" component={Projects} />
@@ -27,8 +27,8 @@ const Main = withRouter(({ location }) => {
                             <ProjectDemos/>
                         </Suspense>
                         )} /> 
-                </Switch>
-            </HashRouter>
+                </HashRouter>
+            </Switch>
         </CSSTransition>
     </TransitionGroup>
 })
