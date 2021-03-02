@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d0ac4dd5.chunk.css",
+    "main.js": "/static/js/main.e0e11d32.chunk.js",
+    "main.js.map": "/static/js/main.e0e11d32.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1d84e1e3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1d84e1e3.js.map",
+    "static/css/2.b77509f6.chunk.css": "/static/css/2.b77509f6.chunk.css",
+    "static/js/2.7adee18a.chunk.js": "/static/js/2.7adee18a.chunk.js",
+    "static/js/2.7adee18a.chunk.js.map": "/static/js/2.7adee18a.chunk.js.map",
+    "static/css/3.52dc9a18.chunk.css": "/static/css/3.52dc9a18.chunk.css",
+    "static/js/3.fb277dcc.chunk.js": "/static/js/3.fb277dcc.chunk.js",
+    "static/js/3.fb277dcc.chunk.js.map": "/static/js/3.fb277dcc.chunk.js.map",
+    "static/css/4.f492fdfa.chunk.css": "/static/css/4.f492fdfa.chunk.css",
+    "static/js/4.8b1ff7ad.chunk.js": "/static/js/4.8b1ff7ad.chunk.js",
+    "static/js/4.8b1ff7ad.chunk.js.map": "/static/js/4.8b1ff7ad.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b34c4ddd88c126f1036c9e40e145444b.js": "/precache-manifest.b34c4ddd88c126f1036c9e40e145444b.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.b77509f6.chunk.css.map": "/static/css/2.b77509f6.chunk.css.map",
+    "static/css/3.52dc9a18.chunk.css.map": "/static/css/3.52dc9a18.chunk.css.map",
+    "static/css/4.f492fdfa.chunk.css.map": "/static/css/4.f492fdfa.chunk.css.map",
+    "static/css/main.d0ac4dd5.chunk.css.map": "/static/css/main.d0ac4dd5.chunk.css.map",
+    "static/js/2.7adee18a.chunk.js.LICENSE.txt": "/static/js/2.7adee18a.chunk.js.LICENSE.txt",
+    "static/js/3.fb277dcc.chunk.js.LICENSE.txt": "/static/js/3.fb277dcc.chunk.js.LICENSE.txt",
+    "static/media/angular-logo.png": "/static/media/angular-logo.086f8974.png",
+    "static/media/compass.svg": "/static/media/compass.6283f176.svg",
+    "static/media/docker-logo.png": "/static/media/docker-logo.ed146771.png",
+    "static/media/inval.png": "/static/media/inval.e6b8cffe.png",
+    "static/media/profile.jpeg": "/static/media/profile.6d65f195.jpeg",
+    "static/media/react-logo.png": "/static/media/react-logo.cba0b89d.png",
+    "static/media/sgyt.png": "/static/media/sgyt.44058337.png",
+    "static/media/usaclogo.png": "/static/media/usaclogo.209c1aff.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d84e1e3.js",
+    "static/css/2.b77509f6.chunk.css",
+    "static/js/2.7adee18a.chunk.js",
+    "static/css/main.d0ac4dd5.chunk.css",
+    "static/js/main.e0e11d32.chunk.js"
+  ]
+}
