@@ -1,8 +1,0 @@
-
-.shoeWrapper {
-  height: '85vh';
-
-  @media (min-width:400px){
-    height: '90vh';
-  }
-}

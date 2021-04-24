@@ -6,14 +6,14 @@ import { lang } from '../strings/languaje'
 const Contact = props => {
     return (
         <Grid className="contact-grid">
-            <Cell col={6}>
+            <Cell col={6} phone={4}>
                 <h2>Miguel Ruano</h2>
                 <ProfilePic />
                 <p>
                     {lang.aboutme}
                 </p>
             </Cell>
-            <Cell col={6}>
+            <Cell col={6} phone={8}>
                 <h2>Contact Me</h2>
                 <hr />
                 <div>
@@ -22,7 +22,7 @@ const Contact = props => {
                             <ListItemContent>
                                 <h5>
                                     <i className="fa fa-phone" aria-hidden="true" />
-                                            32043114
+                                            +502 32043114
                                         </h5>
                             </ListItemContent>
                         </ListItem>

@@ -1,0 +1,64 @@
+.no_margin_bottom {
+    margin: 0;
+    padding: 0;
+}
+
+.job_name{
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.job_desc{
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.made-with {
+    margin-left: 10px;
+    padding: 0;
+}
+
+/*** RIGHT */
+.resume-right-col{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    color: white;
+    border-radius: 20px;
+    padding: 2em;
+
+}
+  
+.resume-right-col h2{
+    border-bottom: 0px;
+}
+  
+.resume-right-col hr{
+    border-top: 3px solid red;
+}
+
+.resume-data {
+    height: 80vh;
+    overflow-y: auto;
+}
+
+/*** LEFT */
+
+.resume-left-col{
+    padding-left: 4em;
+  }
+  
+  .resume-left-col hr{
+    width: 50%;
+    border-radius: 1px;
+    border-top: 3px solid black;
+    justify-content: center;
+  }
+  
+  .resume-left-col img{
+    height: 300px;
+    border-radius: 200px;
+  }

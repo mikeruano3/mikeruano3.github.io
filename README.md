@@ -16,6 +16,11 @@ https://reactrouter.com/web/guides/quick-start
 
 https://reactcommunity.org/react-transition-group/
 
+https://www.npmjs.com/package/react-scroll-parallax
+
+## Has potential
+
+https://www.npmjs.com/package/react-scroll
 
 ## Available Scripts
 

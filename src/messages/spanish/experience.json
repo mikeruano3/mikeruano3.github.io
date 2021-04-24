@@ -1,26 +1,38 @@
 [
     {
-        "startDate": "1 Feb 2019",
-        "endDate": "1 Nov 2019",
-        "institution": "San Carlos of Guatemala University",
-        "jobName": "Academic Tutor (Compiler Science I)",
-        "jobDescription": "I worked as a supporting teacher at the Compiler Science Area. I managed to learn the basics of compilers and its implementation",
-        "image": "usaclogo.png"
-    },
-    {
-        "startDate": "25 Sept 2019",
-        "endDate": "19 Feb 2020",
-        "institution": "Seguros GyT",
-        "jobName": "Analyst/Programmer",
-        "jobDescription": "During the last 6 months I gave support to existing and new software for the company, adding and reviewing functionalities, as well as working in new solutions",
-        "image": "sgyt.png"
+        "startDate": "April 2020",
+        "endDate": "Currently",
+        "institution": "InfoUtility",
+        "jobName": "Software Developer",
+        "url": "https://reporting-pal.com/",
+        "jobDescription": "Currently I am working part-time as a freelancer at several projects. I work with technologies such as NodeJs, AngularJs, .Net C#, Angular 8 and more.",
+        "image": "infoutility.jpg"
     },
     {
         "startDate": "April 2020",
         "endDate": "Currently",
         "institution": "InfoUtility",
         "jobName": "Software Developer",
+        "url": "http://infoutilitygt.com/",
         "jobDescription": "Currently I am working part-time as a freelancer at several projects. I work with technologies such as NodeJs, AngularJs, .Net C#, Angular 8 and more.",
-        "image": "infoutility.jpg"
+        "image": "rp.png"
+    },
+    {
+        "startDate": "25 Sept 2019",
+        "endDate": "19 Feb 2020",
+        "institution": "Seguros GyT",
+        "jobName": "Analyst/Programmer",
+        "url": "https://segurosgyt.com.gt/",
+        "jobDescription": "During the last 6 months I gave support to existing and new software for the company, adding and reviewing functionalities, as well as working in new solutions",
+        "image": "sgyt.png"
+    },
+    {
+        "startDate": "1 Feb 2019",
+        "endDate": "1 Nov 2019",
+        "institution": "San Carlos of Guatemala University",
+        "jobName": "Academic Tutor (Compiler Science I)",
+        "url": "https://www.usac.edu.gt/",
+        "jobDescription": "I worked as a supporting teacher at the Compiler Science Area. I managed to learn the basics of compilers and its implementation",
+        "image": "usaclogo.png"
     }
 ]
