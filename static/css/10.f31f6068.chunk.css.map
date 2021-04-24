@@ -1,0 +1,1 @@
+{"version":3,"sources":["ProfilePic.scss"],"names":[],"mappings":"AAEI,wBAFJ,oBAGQ,WAAA,CAAA","file":"10.f31f6068.chunk.css","sourcesContent":[".profile-image-size {\r\n  \r\n    @media (min-width:400px){\r\n        height: 30vh;\r\n    }\r\n}\r\n"]}
