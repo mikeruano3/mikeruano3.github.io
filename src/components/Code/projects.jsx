@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Tabs, Tab, Grid, Cell } from 'react-mdl'
 import ProjectCard from './project-card'
 import { projectsData } from '../../messages/english/projects.data'
+import './projects.scss'
 
 const Projects = props => {
     const [activeTab, setActiveTab] = useState(0)
@@ -25,7 +26,7 @@ const Projects = props => {
     })
 
     return (
-        <div>
+        <div className="code-main-style">
             <Tabs activeTab={activeTab}
                 onChange={(tabId) => setActiveTab(tabId)}
                 ripple>
@@ -36,7 +37,7 @@ const Projects = props => {
                     }
             </Tabs>
 
-            <Grid>
+            <Grid style={{ height: '80vh' }}>
                 <Cell col={12}>
                     {showedTab}
                 </Cell>

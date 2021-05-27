@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid, Cell, ListItem, List, ListItemContent } from 'react-mdl'
 import ProfilePic from '../components/Images/ProfilePic'
 import { lang } from '../strings/languaje'
+import './contact.scss'
 
 const Contact = props => {
     return (

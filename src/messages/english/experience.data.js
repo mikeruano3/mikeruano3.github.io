@@ -3,6 +3,7 @@ import sgyt from '../../assets/img/sgyt.png'
 import infoutility from '../../assets/img/infoutility.jpg'
 import usaclogo from '../../assets/img/usaclogo.png'
 import rp from '../../assets/img/rp.png'
+import { NavLink } from 'react-router-dom'
 
 export const experienceData = [
     {
@@ -13,13 +14,13 @@ export const experienceData = [
         url: "https://reporting-pal.com/",
         jobDescription: <div>
             <h6 className="job_desc">
-                Lead developer for TICO (check out the projects tab). TICO is a project 
+                Main developer for TICO (check out the  <NavLink to="/projects">project's tab</NavLink>). TICO is a project 
                 made in collaboration with <a href='https://jcwtitle.com/'>JWCTitle</a> to help 
                 collaborators create property examinations for their clients.
             </h6>
             <p className="made-with"><i>Made with Angular, Firebase, Azure</i></p>
             <h6 className="no_margin_bottom">
-                Side developer for the ReactJS-based CRM project for  
+                Full Stack Developer for the ReactJS-based CRM project for  
                 <a href='https://omniinteractions.com/gig-life/'> Omni Interactions</a> company.
             </h6>
             <p className="made-with"><i>Made with REACTJS, MongoDB, Azure, Google Cloud Functions</i></p>

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import './rainbow.scss'
 
-const LinkComponent = (props) => {
-    let styleBefore = {textDecoration: 'none', color: "white", padding: '2em'}
+const LinkComponent = props => {
+    const { to, styleBefore, activeClassName, exact, children} = props
 
     const [hoverState, setHoverState] = useState({hover: false})
     const [linkStyle, setLinkStyle] = useState(styleBefore)
@@ -18,26 +18,26 @@ const LinkComponent = (props) => {
     };
 
     return (
-            <Link to={props.to} style={linkStyle} 
+            <NavLink to={to} className={linkStyle} activeClassName={activeClassName} exact={exact}
                 onMouseEnter={toggleStyle} 
                 onMouseLeave={toggleStyle}>
                 {
                 hoverState.hover ? 
                     (
                         <ul className="c-rainbow">
-                            <li className="c-rainbow__layer c-rainbow__layer--white">{props.text}</li>
-                            <li className="c-rainbow__layer c-rainbow__layer--orange">{props.text}</li>
-                            <li className="c-rainbow__layer c-rainbow__layer--red">{props.text}</li>
-                            <li className="c-rainbow__layer c-rainbow__layer--violet">{props.text}</li>
-                            <li className="c-rainbow__layer c-rainbow__layer--blue">{props.text}</li>
-                            <li className="c-rainbow__layer c-rainbow__layer--green">{props.text}</li>
-                            <li className="c-rainbow__layer c-rainbow__layer--yellow">{props.text}</li>
+                            <li className="c-rainbow__layer c-rainbow__layer--white">{children}</li>
+                            <li className="c-rainbow__layer c-rainbow__layer--orange">{children}</li>
+                            <li className="c-rainbow__layer c-rainbow__layer--red">{children}</li>
+                            <li className="c-rainbow__layer c-rainbow__layer--violet">{children}</li>
+                            <li className="c-rainbow__layer c-rainbow__layer--blue">{children}</li>
+                            <li className="c-rainbow__layer c-rainbow__layer--green">{children}</li>
+                            <li className="c-rainbow__layer c-rainbow__layer--yellow">{children}</li>
                         </ul>  
                     ):(
-                        <h5>{props.text}</h5>
+                        children
                     )
                 }
-            </Link>
+            </NavLink>
     )
 } 
 

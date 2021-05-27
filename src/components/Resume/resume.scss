@@ -1,3 +1,7 @@
+.resume-main-style{
+    background-color:  var(--common-bg);
+}
+
 .no_margin_bottom {
     margin: 0;
     padding: 0;
@@ -62,3 +66,19 @@
     height: 300px;
     border-radius: 200px;
   }
+
+.cert-style {
+    margin-left: 10px;
+    h6 {
+        margin-bottom: 0;
+    }
+    p {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+}
+
+#cert-title {
+    margin-left: 10px;
+    margin-bottom: 0px;
+}

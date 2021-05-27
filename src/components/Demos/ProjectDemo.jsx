@@ -17,7 +17,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 const ProjectDemo = props => {
 
     return  (
-        <>
+        <div className="project-demos-main-style">
             <Swiper
                 spaceBetween={50}
                 slidesPerView={1}
@@ -37,7 +37,7 @@ const ProjectDemo = props => {
                     <VideoProject/>
                 </SwiperSlide>
             </Swiper>
-        </>
+        </div>
     )
 }
 

@@ -35,7 +35,7 @@ const ProjectList = props => {
   }
 
   return <div>
-    <section className={' main-section'}>
+    <section className={'section main-section'}>
       <ShootingStarBg height="20vh" title="Projects" />
       <motion.div
         className="courses"

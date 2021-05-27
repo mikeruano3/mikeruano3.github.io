@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,6 +20,7 @@
     --mode-hover: #203297;
 }
 
+/*
 html {
     scroll-behavior: smooth;
 }
@@ -29,16 +31,16 @@ body {
     background: var(--bg);
     overflow-x: hidden;
     transition: background 150ms;
-}
+}*/
 
-section {
+.section {
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    /*position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0;*/
     transform: translateX(150%);
     display: none;
 }
@@ -46,6 +48,7 @@ section {
 .main-section {
     transform: translateX(0px);
     display: block;
+    background-color: var(--common-bg);
 }
 
 .course-header {

@@ -9,14 +9,18 @@ Link {
 }
 
 .table-of-contents {
-    background-color: #ffff;
-
+    background-color: var(--common-bg);
+    border-radius: 10px;
+    
     @media only screen and (max-width: 840px) {
         width: 100%;
     }
 }
 
 .video-contents {
+    background-color: var(--common-bg);
+    border-radius: 10px;
+    
     @media only screen and (max-width: 840px) {
         width: 100vw;
     }

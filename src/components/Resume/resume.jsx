@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
@@ -9,11 +9,26 @@ import { skillsData } from '../../messages/english/skills.data.js'
 import { lang } from '../../strings/languaje'
 import './resume.scss'
 
-class Resume extends Component {
+const certificates = [
+    { 
+        title: " React - The Complete Guide (incl Hooks, React Router, Redux) ",
+        url: "https://www.udemy.com/certificate/UC-ce33efce-cd96-4c1e-855d-dbabdf24df4b"
+    }
+]
 
-    render() {
+const CertCpnt = props => {
+    return <div className="cert-style">
+        <h6> {props.title} </h6>
+        <p><a href={props.url} rel="noopener noreferrer" target="_blank">
+				Check Certificate
+			</a></p>
+    </div>
+}
+
+const Resume = props => {
+
         return (
-            <div>
+            <div className="resume-main-style">
                 <Grid>
                     <Cell col={4} className="resume-left-col">
                         <h2>Miguel Ruano</h2>
@@ -37,6 +52,10 @@ class Resume extends Component {
                             })}
                             <hr />
                             <h2>Education</h2>
+                            <h4 id="cert-title">Certificates</h4>
+                            {certificates.map((item, i) => {
+                                return (<CertCpnt key={i} {...item} />)
+                            })}
                             {educationData.map((item, i) => {
                                 return (<Education key={i} educationItem={item} />)
                             })}
@@ -68,7 +87,6 @@ class Resume extends Component {
                 </Grid>
             </div>
         )
-    }
 }
 
 export default Resume

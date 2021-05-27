@@ -6,3 +6,7 @@
     height: '90vh';
   }
 }
+
+.project-demos-main-style {
+  background-color:  var(--common-bg);
+}
