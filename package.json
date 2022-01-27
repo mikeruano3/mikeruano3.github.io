@@ -30,7 +30,7 @@
     "react-transition-group": "^4.4.1",
     "styled-components": "^5.2.1",
     "swiper": "^6.4.15",
-    "three": "^0.125.2",
+    "three": "^0.137.0",
     "valtio": "^0.7.0"
   },
   "scripts": {
